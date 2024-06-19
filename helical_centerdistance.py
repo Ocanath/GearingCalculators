@@ -74,3 +74,4 @@ class HelicalGears:
 		self.ax	= ((self.z1 + self.z2)/(2*np.cos(self.helix_angle_rad)) + self.y) *self.m	#Center Distance!!!!
 		self.d1 = self.get_working_pitch_diameter(self.z1, self.m, self.helix_angle_rad)	#standard pitch diameter
 		self.d2 = self.get_working_pitch_diameter(self.z2, self.m, self.helix_angle_rad)	#standard pitch diameter
+
