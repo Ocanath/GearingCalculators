@@ -17,4 +17,6 @@ print("center distance", h.ax)
 # # print("involute", inv)
 # print("inverse involute", h.inverseInvolute(val))
 # print("inverse involute of involute of val", h.inverseInvolute(h.involute(val)))
-
+print("x1 = ", h.ax*np.cos(0*120*np.pi/180+np.pi/2), "y1 = ", h.ax*np.sin(0*120*np.pi/180+np.pi/2))
+print("x2 = ", h.ax*np.cos(120*np.pi/180+np.pi/2), "y2 = ", h.ax*np.sin(120*np.pi/180+np.pi/2))
+print("x3 = ", h.ax*np.cos(2*120*np.pi/180+np.pi/2), "y3 = ", h.ax*np.sin(2*120*np.pi/180+np.pi/2))
