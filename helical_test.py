@@ -6,7 +6,10 @@ Note: NORMAL module is different from TRANSVERSE module. Transverse module is de
 """
 
 # h = HelicalGears(profile_shift_1=0.09809)
-h = HelicalGears(num_teeth_1=28,num_teeth_2=12,normal_module=0.4,helix_angle_deg=30,normal_pressure_angle_deg=20,profile_shift_1=0,profile_shift_2=0)
+transverse_module = 0.4
+helix_angle = 30
+normal_module = transverse_module*np.cos(helix_angle*np.pi/180)
+h = HelicalGears(num_teeth_1=-28,num_teeth_2=68,normal_module=normal_module,helix_angle_deg=helix_angle,normal_pressure_angle_deg=20,profile_shift_1=0,profile_shift_2=0)
 print("radial pressure angle, degrees", h.radial_pressure_angle_rad*180/np.pi)
 print("radial working pressure angle, degrees", h.radial_working_pressure_angle_rad*180/np.pi)
 print("y", h.y)
